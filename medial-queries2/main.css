@@ -1,3 +1,52 @@
 body {
   background: papayawhip;
 }
+
+*{
+  border: 1px solid black;
+}
+.a, .b, .c, .d, .e, .f{
+  background-color: aliceblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 90vh;
+  grid-gap: 10px;
+}
+.a{
+  grid-column: 1/4;
+}
+.b{
+  grid-column: 1/4;
+  grid-row: 2/5;
+}
+.f{
+  grid-column: 1/4;
+}
+
+@media (min-width: 600px) {
+  *{
+    border: 1px solid black;
+  }
+  .a, .b, .c, .d, .e, .f{
+    background-color: aliceblue;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 90vh;
+  }
+  .a{
+    grid-column: 1/5;
+  }
+  .b{
+    grid-column: 1/4;
+  }
+  .f{
+    grid-column: 4;
+    grid-row:2/4;
+  }
+}
